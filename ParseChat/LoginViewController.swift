@@ -41,6 +41,7 @@ class LoginViewController: UIViewController {
         let errorString = error.localizedDescription
       } else {
         print("Let's use the app")
+        self.performSegue(withIdentifier: "successLogin", sender: self)
       }
     }
     
@@ -51,6 +52,7 @@ class LoginViewController: UIViewController {
     PFUser.logInWithUsername(inBackground: login, password: password) { (user: PFUser?, error: Error?) in
       if user != nil {
         print("Successful login")
+        self.performSegue(withIdentifier: "successLogin", sender: self)
       } else {
         print("Error")
       }
