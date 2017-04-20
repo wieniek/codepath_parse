@@ -9,15 +9,28 @@
 import UIKit
 import Parse
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+  @IBOutlet weak var tableView: UITableView!
+  
     @IBOutlet weak var messageField: UITextField!
     var message: String {
         get {
             return messageField.text ?? ""
         }
     }
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 1
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
     
+    return cell
+  }
+  
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Chat"

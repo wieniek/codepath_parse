@@ -15,6 +15,7 @@
 		F42781191E9E662100140F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42781181E9E662100140F11 /* Assets.xcassets */; };
 		F427811C1E9E662100140F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F427811A1E9E662100140F11 /* LaunchScreen.storyboard */; };
 		F436C16A1E9F184000480F91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F436C1691E9F184000480F91 /* LoginViewController.swift */; };
+		F4A2A13F1E9F2D790028FC38 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A2A13E1E9F2D790028FC38 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F427811B1E9E662100140F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F427811D1E9E662100140F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F436C1691E9F184000480F91 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F4A2A13E1E9F2D790028FC38 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				F436C1691E9F184000480F91 /* LoginViewController.swift */,
 				6964507F1E9F20F100C19AE6 /* ChatViewController.swift */,
 				696450811E9F251D00C19AE6 /* Message.swift */,
+				F4A2A13E1E9F2D790028FC38 /* MessageCell.swift */,
 			);
 			path = ParseChat;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F436C16A1E9F184000480F91 /* LoginViewController.swift in Sources */,
+				F4A2A13F1E9F2D790028FC38 /* MessageCell.swift in Sources */,
 				696450821E9F251D00C19AE6 /* Message.swift in Sources */,
 				696450801E9F20F100C19AE6 /* ChatViewController.swift in Sources */,
 				F42781121E9E662100140F11 /* AppDelegate.swift in Sources */,
